@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ns0:dataDocument xmlns:ns0="http://www.fpml.org/FpML-5/confirmation" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" fpmlVersion="5-12" xsi:schemaLocation="http://www.fpml.org/FpML-5/confirmation ../../schemas/fpml-main-5-12.xsd http://www.w3.org/2000/09/xmldsig# ../../schemas/xmldsig-core-schema.xsd">
+  <ns0:trade>
+    <ns0:tradeHeader>
+      <ns0:partyTradeIdentifier>
+        <ns0:partyReference href="party1" />
+        <ns0:tradeId tradeIdScheme="http://www.swapswire.com/spec/2001/trade-id-1-0">37264</ns0:tradeId>
+      </ns0:partyTradeIdentifier>
+      <ns0:partyTradeIdentifier>
+        <ns0:partyReference href="party2" />
+        <ns0:tradeId tradeIdScheme="http://www.swapswire.com/spec/2001/trade-id-1-0">37264</ns0:tradeId>
+      </ns0:partyTradeIdentifier>
+      <ns0:tradeDate>2023-08-22</ns0:tradeDate>
+    </ns0:tradeHeader>
+    <ns0:creditDefaultSwap>
+      <ns0:generalTerms>
+        <ns0:effectiveDate>
+          <ns0:unadjustedDate>2023-08-23</ns0:unadjustedDate>
+          <ns0:dateAdjustments>
+            <ns0:businessDayConvention>NONE</ns0:businessDayConvention>
+          </ns0:dateAdjustments>
+        </ns0:effectiveDate>
+        <ns0:scheduledTerminationDate>
+          <ns0:unadjustedDate>2031-08-17</ns0:unadjustedDate>
+          <ns0:dateAdjustments>
+            <ns0:businessDayConvention>MODFOLLOWING</ns0:businessDayConvention>
+            <ns0:businessCenters>
+              <ns0:businessCenter>GBLO</ns0:businessCenter>
+              <ns0:businessCenter>USNY</ns0:businessCenter>
+            </ns0:businessCenters>
+          </ns0:dateAdjustments>
+        </ns0:scheduledTerminationDate>
+        <ns0:buyerPartyReference href="party2" />
+        <ns0:sellerPartyReference href="party1" />
+        <ns0:dateAdjustments>
+          <ns0:businessDayConvention>MODFOLLOWING</ns0:businessDayConvention>
+          <ns0:businessCenters>
+            <ns0:businessCenter>GBLO</ns0:businessCenter>
+            <ns0:businessCenter>USNY</ns0:businessCenter>
+          </ns0:businessCenters>
+        </ns0:dateAdjustments>
+        <ns0:referenceInformation>
+          <ns0:referenceEntity id="referenceEntity">Agrium Inc.008HA7</ns0:referenceEntity>
+          <ns0:referenceObligation>
+            <ns0:bond>
+              <ns0:instrumentId instrumentIdScheme="http://www.fpml.org/coding-scheme/external/instrument-id-CUSIP">008916AB4</ns0:instrumentId>
+              <ns0:couponRate>0.077</ns0:couponRate>
+              <ns0:maturity>2017-02-01</ns0:maturity>
+            </ns0:bond>
+            <ns0:primaryObligorReference href="referenceEntity" />
+          </ns0:referenceObligation>
+          <ns0:referencePrice>1.0</ns0:referencePrice>
+        </ns0:referenceInformation>
+      </ns0:generalTerms>
+      <ns0:feeLeg>
+        <ns0:periodicPayment>
+          <ns0:paymentFrequency>
+            <ns0:periodMultiplier>3</ns0:periodMultiplier>
+            <ns0:period>M</ns0:period>
+          </ns0:paymentFrequency>
+          <ns0:firstPaymentDate>2023-08-23</ns0:firstPaymentDate>
+          <ns0:rollConvention>6</ns0:rollConvention>
+          <ns0:fixedAmountCalculation>
+            <ns0:calculationAmount>
+              <ns0:currency>USD</ns0:currency>
+              <ns0:amount>5000000.0</ns0:amount>
+            </ns0:calculationAmount>
+            <ns0:fixedRate>0.0154</ns0:fixedRate>
+            <ns0:dayCountFraction>ACT/360</ns0:dayCountFraction>
+          </ns0:fixedAmountCalculation>
+        </ns0:periodicPayment>
+      </ns0:feeLeg>
+      <ns0:protectionTerms>
+        <ns0:calculationAmount>
+          <ns0:currency>USD</ns0:currency>
+          <ns0:amount>5000000.0</ns0:amount>
+        </ns0:calculationAmount>
+        <ns0:creditEvents>
+          <ns0:bankruptcy>true</ns0:bankruptcy>
+          <ns0:failureToPay>
+            <ns0:applicable>true</ns0:applicable>
+            <ns0:paymentRequirement>
+              <ns0:currency>USD</ns0:currency>
+              <ns0:amount>1000000.0</ns0:amount>
+            </ns0:paymentRequirement>
+          </ns0:failureToPay>
+          <ns0:restructuring>
+            <ns0:applicable>true</ns0:applicable>
+            <ns0:restructuringType>ModR</ns0:restructuringType>
+          </ns0:restructuring>
+          <ns0:defaultRequirement>
+            <ns0:currency>USD</ns0:currency>
+            <ns0:amount>10000000.0</ns0:amount>
+          </ns0:defaultRequirement>
+          <ns0:creditEventNotice>
+            <ns0:notifyingParty>
+              <ns0:buyerPartyReference href="party2" />
+              <ns0:sellerPartyReference href="party1" />
+            </ns0:notifyingParty>
+            <ns0:publiclyAvailableInformation>
+              <ns0:standardPublicSources>true</ns0:standardPublicSources>
+              <ns0:specifiedNumber>2</ns0:specifiedNumber>
+            </ns0:publiclyAvailableInformation>
+          </ns0:creditEventNotice>
+        </ns0:creditEvents>
+        <ns0:obligations>
+          <ns0:category>BorrowedMoney</ns0:category>
+        </ns0:obligations>
+      </ns0:protectionTerms>
+      <ns0:physicalSettlementTerms>
+        <ns0:settlementCurrency>USD</ns0:settlementCurrency>
+        <ns0:physicalSettlementPeriod>
+          <ns0:maximumBusinessDays>30</ns0:maximumBusinessDays>
+        </ns0:physicalSettlementPeriod>
+        <ns0:deliverableObligations>
+          <ns0:accruedInterest>false</ns0:accruedInterest>
+          <ns0:category>BondOrLoan</ns0:category>
+          <ns0:notSubordinated>true</ns0:notSubordinated>
+          <ns0:specifiedCurrency>
+            <ns0:applicable>true</ns0:applicable>
+          </ns0:specifiedCurrency>
+          <ns0:notContingent>true</ns0:notContingent>
+          <ns0:assignableLoan>
+            <ns0:applicable>true</ns0:applicable>
+          </ns0:assignableLoan>
+          <ns0:consentRequiredLoan>
+            <ns0:applicable>true</ns0:applicable>
+          </ns0:consentRequiredLoan>
+          <ns0:transferable>true</ns0:transferable>
+          <ns0:maximumMaturity>
+            <ns0:periodMultiplier>30</ns0:periodMultiplier>
+            <ns0:period>Y</ns0:period>
+          </ns0:maximumMaturity>
+          <ns0:notBearer>true</ns0:notBearer>
+        </ns0:deliverableObligations>
+        <ns0:escrow>true</ns0:escrow>
+      </ns0:physicalSettlementTerms>
+    </ns0:creditDefaultSwap>
+    <ns0:calculationAgent>
+      <ns0:calculationAgentPartyReference href="party1" />
+    </ns0:calculationAgent>
+    <ns0:calculationAgentBusinessCenter>USNY</ns0:calculationAgentBusinessCenter>
+    <ns0:documentation>
+      <ns0:masterAgreement>
+        <ns0:masterAgreementType>ISDA</ns0:masterAgreementType>
+        <ns0:masterAgreementVersion>1992</ns0:masterAgreementVersion>
+      </ns0:masterAgreement>
+      <ns0:contractualDefinitions>ISDA1999Credit</ns0:contractualDefinitions>
+    </ns0:documentation>
+  </ns0:trade>
+  <ns0:party id="party1">
+    <ns0:partyId partyIdScheme="http://www.fpml.org/coding-scheme/external/iso17442">254900BIAQJIUV6DLE92</ns0:partyId>
+    <ns0:partyName>XYZ Bank</ns0:partyName>
+  </ns0:party>
+  <ns0:party id="party2">
+    <ns0:partyId partyIdScheme="http://www.fpml.org/coding-scheme/external/iso17442">549300VBWWV6BYQOWM67</ns0:partyId>
+    <ns0:partyName>ABC Bank</ns0:partyName>
+  </ns0:party>
+</ns0:dataDocument>

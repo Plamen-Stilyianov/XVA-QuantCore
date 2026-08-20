@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ns0:requestConfirmation xmlns:ns0="http://fpml.org" xmlns:ns1="http://w3.org" fpmlVersion="5-12" ns1:schemaLocation="http://fpml.org ../../schemas/fpml-main-5-12.xsd http://w3.org ../../schemas/xmldsig-core-schema.xsd">
+  <ns0:header>
+    <ns0:messageId messageIdScheme="http://matchingservice.com">FX456a789b</ns0:messageId>
+    <ns0:sentBy messageAddressScheme="http://matchingservice.com">ABN</ns0:sentBy>
+    <ns0:sendTo messageAddressScheme="http://matchingservice.com">MATCHSRV</ns0:sendTo>
+    <ns0:creationTimestamp>2021-10-11T08:57:00Z</ns0:creationTimestamp>
+  </ns0:header>
+  <ns0:isCorrection>false</ns0:isCorrection>
+  <ns0:correlationId correlationIdScheme="http://matchingservice.com">FX987</ns0:correlationId>
+  <ns0:sequenceNumber>1</ns0:sequenceNumber>
+  <ns0:trade>
+    <ns0:tradeHeader>
+      <ns0:partyTradeIdentifier>
+        <ns0:partyReference href="party1" />
+        <ns0:tradeId tradeIdScheme="http://abn-amro.com">ABN1234</ns0:tradeId>
+      </ns0:partyTradeIdentifier>
+      <ns0:partyTradeIdentifier>
+        <ns0:partyReference href="party2" />
+        <ns0:tradeId tradeIdScheme="http://db.com">DB5678</ns0:tradeId>
+      </ns0:partyTradeIdentifier>
+      <ns0:tradeDate>2021-10-11</ns0:tradeDate>
+    </ns0:tradeHeader>
+    <ns0:fxSingleLeg>
+      <ns0:exchangedCurrency1>
+        <ns0:payerPartyReference href="party2" />
+        <ns0:receiverPartyReference href="party1" />
+        <ns0:paymentAmount>
+          <ns0:currency>EUR</ns0:currency>
+          <ns0:amount>10000000</ns0:amount>
+        </ns0:paymentAmount>
+      </ns0:exchangedCurrency1>
+      <ns0:exchangedCurrency2>
+        <ns0:payerPartyReference href="party1" />
+        <ns0:receiverPartyReference href="party2" />
+        <ns0:paymentAmount>
+          <ns0:currency>USD</ns0:currency>
+          <ns0:amount>11545522</ns0:amount>
+        </ns0:paymentAmount>
+      </ns0:exchangedCurrency2>
+      <ns0:valueDate>2021-11-12</ns0:valueDate>
+      <ns0:exchangeRate>
+        <ns0:quotedCurrencyPair>
+          <ns0:currency1>EUR</ns0:currency1>
+          <ns0:currency2>USD</ns0:currency2>
+          <ns0:quoteBasis>Currency2PerCurrency1</ns0:quoteBasis>
+        </ns0:quotedCurrencyPair>
+        <ns0:rate>1.1546</ns0:rate>
+        <ns0:spotRate>1.1530</ns0:spotRate>
+        <ns0:forwardPoints>0.0015</ns0:forwardPoints>
+      </ns0:exchangeRate>
+    </ns0:fxSingleLeg>
+  </ns0:trade>
+  <ns0:party id="party1">
+    <ns0:partyId partyIdScheme="http://fpml.org">BFXS5XCH7N0Y05NIXW11</ns0:partyId>
+    <ns0:partyName>Deutsche Bank AG</ns0:partyName>
+  </ns0:party>
+  <ns0:party id="party2">
+    <ns0:partyId partyIdScheme="http://fpml.org">213800QILIUD4ROSUO03</ns0:partyId>
+    <ns0:partyName>ABN AMRO Bank NV</ns0:partyName>
+  </ns0:party>
+</ns0:requestConfirmation>

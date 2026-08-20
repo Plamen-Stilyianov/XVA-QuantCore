@@ -1,0 +1,21 @@
+counterparty_id,company_name,year,tier1_capital_ratio,leverage_ratio,liquidity_coverage_ratio,fred_credit_spread,default_label
+XYZBANK,XYZ Bank Corp,2007,9.5,6.1,104.0,0.98,0
+XYZBANK,XYZ Bank Corp,2008,5.1,8.9,72.0,5.62,1
+XYZBANK,XYZ Bank Corp,2009,4.2,9.8,55.0,2.85,1
+XYZBANK,XYZ Bank Corp,2010,7.1,7.0,101.0,1.45,0
+XYZBANK,XYZ Bank Corp,2011,6.4,7.5,98.0,2.45,1
+XYZBANK,XYZ Bank Corp,2012,5.1,8.9,81.0,1.95,1
+XYZBANK,XYZ Bank Corp,2013,8.2,6.2,112.0,1.32,0
+XYZBANK,XYZ Bank Corp,2014,8.8,5.9,116.0,1.12,0
+XYZBANK,XYZ Bank Corp,2015,9.2,5.6,120.0,1.28,0
+XYZBANK,XYZ Bank Corp,2016,9.5,5.4,122.0,1.48,0
+XYZBANK,XYZ Bank Corp,2017,9.8,5.1,125.0,1.22,0
+XYZBANK,XYZ Bank Corp,2018,9.4,5.3,120.0,1.44,0
+XYZBANK,XYZ Bank Corp,2019,9.1,5.6,115.0,1.31,0
+XYZBANK,XYZ Bank Corp,2020,6.8,7.4,88.0,2.78,1
+XYZBANK,XYZ Bank Corp,2021,11.2,5.2,120.0,1.15,0
+XYZBANK,XYZ Bank Corp,2022,10.5,5.8,110.5,1.42,0
+XYZBANK,XYZ Bank Corp,2023,9.8,6.2,102.1,1.65,0
+XYZBANK,XYZ Bank Corp,2024,8.8,7.1,95.0,1.35,0
+XYZBANK,XYZ Bank Corp,2025,8.2,7.8,88.5,1.45,0
+XYZBANK,XYZ Bank Corp,2026,5.8,9.5,68.0,1.2,1

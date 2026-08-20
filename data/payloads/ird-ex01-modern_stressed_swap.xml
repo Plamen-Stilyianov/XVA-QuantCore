@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ns0:dataDocument xmlns:ns0="http://fpml.org" xmlns:ns1="http://w3.org" ns1:schemaLocation="http://fpml.org ../../schemas/fpml-main-5-12.xsd" fpmlVersion="5-12">
+  <ns0:trade>
+    <ns0:tradeHeader>
+      <ns0:tradeId tradeIdScheme="http://pwc.com">PWC_STRESSED_RATES_001</ns0:tradeId>
+      <ns0:tradeDate>2023-08-22</ns0:tradeDate>
+    </ns0:tradeHeader>
+    <ns0:swap>
+      <ns0:swapStream id="fixedLeg">
+        <ns0:payerPartyReference href="party1" />
+        <ns0:receiverPartyReference href="party2" />
+        <ns0:calculationPeriodAmount>
+          <ns0:calculationPeriodAmountCalculation>
+            <ns0:notionalSchedule>
+              <ns0:notionalStepSchedule>
+                <ns0:initialValue>25000000.00</ns0:initialValue>
+                <ns0:currency>GBP</ns0:currency>
+              </ns0:notionalStepSchedule>
+            </ns0:notionalSchedule>
+            <ns0:fixedRateSchedule>
+              <ns0:initialValue>0.0106</ns0:initialValue>
+            </ns0:fixedRateSchedule>
+            <ns0:dayCountFraction>30/360</ns0:dayCountFraction>
+          </ns0:calculationPeriodAmountCalculation>
+        </ns0:calculationPeriodAmount>
+      </ns0:swapStream>
+      <ns0:swapStream id="floatingLeg">
+        <ns0:payerPartyReference href="party2" />
+        <ns0:receiverPartyReference href="party1" />
+        <ns0:calculationPeriodAmount>
+          <ns0:calculationPeriodAmountCalculation>
+            <ns0:notionalSchedule>
+              <ns0:notionalStepSchedule>
+                <ns0:initialValue>25000000.00</ns0:initialValue>
+                <ns0:currency>GBP</ns0:currency>
+              </ns0:notionalStepSchedule>
+            </ns0:notionalSchedule>
+            <ns0:floatingRateCalculation>
+              <ns0:floatingRateIndex>GBP-SONIA-COMPOUND</ns0:floatingRateIndex>
+              <ns0:indexTenor>
+                <ns0:periodMultiplier>3</ns0:periodMultiplier>
+                <ns0:period>M</ns0:period>
+              </ns0:indexTenor>
+              <ns0:spreadStepSchedule>
+                <ns0:initialValue>0.6435</ns0:initialValue>
+              </ns0:spreadStepSchedule>
+            </ns0:floatingRateCalculation>
+            <ns0:dayCountFraction>ACT/365.FIXED</ns0:dayCountFraction>
+          </ns0:calculationPeriodAmountCalculation>
+        </ns0:calculationPeriodAmount>
+      </ns0:swapStream>
+      <ns0:earlyTerminationProvision>
+        <ns0:terminationDate>
+          <ns0:unadjustedDate>2031-08-18</ns0:unadjustedDate>
+        </ns0:terminationDate>
+      </ns0:earlyTerminationProvision>
+    </ns0:swap>
+  </ns0:trade>
+  <ns0:party id="party1">
+    <ns0:partyId partyIdScheme="http://fpml.org">549300V6XTL6858OOR49</ns0:partyId>
+    <ns0:partyName>Chase Manhattan Bank</ns0:partyName>
+  </ns0:party>
+  <ns0:party id="party2">
+    <ns0:partyId partyIdScheme="http://fpml.org">2138006E88U11Y786O11</ns0:partyId>
+    <ns0:partyName>Barclays Bank PLC</ns0:partyName>
+  </ns0:party>
+</ns0:dataDocument>

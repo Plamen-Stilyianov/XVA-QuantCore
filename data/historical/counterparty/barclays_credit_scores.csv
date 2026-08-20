@@ -1,0 +1,21 @@
+counterparty_id,company_name,year,tier1_capital_ratio,leverage_ratio,liquidity_coverage_ratio,fred_credit_spread,default_label
+BARCGB22,Barclays Bank PLC,2007,10.2,5.2,112.0,0.98,0
+BARCGB22,Barclays Bank PLC,2008,8.7,6.4,98.0,5.62,0
+BARCGB22,Barclays Bank PLC,2009,11.5,5.1,115.0,2.85,0
+BARCGB22,Barclays Bank PLC,2010,12.1,4.8,122.0,1.45,0
+BARCGB22,Barclays Bank PLC,2011,11.8,4.9,118.0,2.45,0
+BARCGB22,Barclays Bank PLC,2012,12.4,4.7,125.0,1.95,0
+BARCGB22,Barclays Bank PLC,2013,13.2,4.4,134.0,1.32,0
+BARCGB22,Barclays Bank PLC,2014,13.5,4.2,138.0,1.12,0
+BARCGB22,Barclays Bank PLC,2015,13.8,4.1,141.0,1.28,0
+BARCGB22,Barclays Bank PLC,2016,14.1,4.0,144.0,1.48,0
+BARCGB22,Barclays Bank PLC,2017,14.5,3.8,148.0,1.22,0
+BARCGB22,Barclays Bank PLC,2018,14.2,3.9,150.0,1.44,0
+BARCGB22,Barclays Bank PLC,2019,13.8,4.1,145.0,1.31,0
+BARCGB22,Barclays Bank PLC,2020,14.4,3.9,152.0,2.78,0
+BARCGB22,Barclays Bank PLC,2021,14.2,3.9,155.0,1.15,0
+BARCGB22,Barclays Bank PLC,2022,13.9,4.0,152.1,1.42,0
+BARCGB22,Barclays Bank PLC,2023,13.6,4.2,149.0,1.65,0
+BARCGB22,Barclays Bank PLC,2024,13.4,4.3,151.0,1.35,0
+BARCGB22,Barclays Bank PLC,2025,13.8,4.1,145.2,1.45,0
+BARCGB22,Barclays Bank PLC,2026,14.0,4.0,147.0,1.2,0

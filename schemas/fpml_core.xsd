@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           targetNamespace="http://www.fpml.org/FpML-5/confirmation"
+           xmlns="http://www.fpml.org/FpML-5/confirmation"
+           elementFormDefault="qualified">
+    <xs:element name="dataDocument">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="trade" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="tradeHeader">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="tradeIdScheme" type="xs:string"/>
+                                        <xs:element name="tradeId" type="xs:string"/>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="swap">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="swapStream">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="calculationPeriodDates">
+                                                        <xs:complexType>
+                                                            <xs:sequence>
+                                                                <xs:element name="businessCenters">
+                                                                    <xs:complexType>
+                                                                        <xs:sequence>
+                                                                            <xs:element name="businessCenter" type="xs:string"/>
+                                                                        </xs:sequence>
+                                                                    </xs:complexType>
+                                                                </xs:element>
+                                                            </xs:sequence>
+                                                        </xs:complexType>
+                                                    </xs:element>
+                                                    <xs:element name="calculationPeriodAmount">
+                                                        <xs:complexType>
+                                                            <xs:sequence>
+                                                                <xs:element name="calculation">
+                                                                    <xs:complexType>
+                                                                        <xs:sequence>
+                                                                            <xs:element name="notionalSchedule">
+                                                                                <xs:complexType>
+                                                                                    <xs:sequence>
+                                                                                        <xs:element name="notionalStepSchedule">
+                                                                                            <xs:complexType>
+                                                                                                <xs:sequence>
+                                                                                                    <xs:element name="currency" type="xs:string"/>
+                                                                                                    <xs:element name="initialValue" type="xs:decimal"/>
+                                                                                                </xs:sequence>
+                                                                                            </xs:complexType>
+                                                                                        </xs:element>
+                                                                                    </xs:sequence>
+                                                                                </xs:complexType>
+                                                                            </xs:element>
+                                                                            <xs:element name="dayCountFraction" type="xs:string"/>
+                                                                        </xs:sequence>
+                                                                    </xs:complexType>
+                                                                </xs:element>
+                                                            </xs:sequence>
+                                                        </xs:complexType>
+                                                    </xs:element>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>
